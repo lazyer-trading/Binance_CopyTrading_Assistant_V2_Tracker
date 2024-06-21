@@ -38,10 +38,12 @@
 
 
 ## Telegram api
-> token 获取通过新建机器人
+> token: 通过新建机器人获取
+> 
 ![alt text](image-5.png)
 
-> 新建频道获取其id（登陆网页版，在网址里 -开头）
+>chat id:登陆网页版选中个人频道，在网址里 -开头
+> 
 ![alt text](image-6.png)
 
 # 联系我们
