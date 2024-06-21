@@ -28,7 +28,7 @@
 > ./main.exe user.yaml
 
 > 其中user.yaml文件包含交易员主页和telegram api
-![alt text](image-2.png)
+![alt text](image-8.png)
 
 > 跑起来后你的telegram频道会收到仓位变动信息
 ![alt text](image-3.png)
