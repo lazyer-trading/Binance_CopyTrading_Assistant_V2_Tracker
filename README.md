@@ -1,51 +1,51 @@
-# 追客（tracker）币安公域跟单信号追踪
-![alt text](image-7.png)
 
-追客软件将实时跟踪币安公域跟单的历史交易进行仓位信号整理，支持【图形界面/命令行】运行，支持windows/linux系统，支持实时仓位变动信息telegram转发。目前追客只支持交易信号获取，实时同步跟单交易 魅客(MAKER)还在开发中。
+# Tracker - Binance Public Copy Trading Signal Tracker
+
+Tracker software will track the historical trades of Binance public copy trading in real-time and organize position signals. It supports both **GUI/Command Line** operation on Windows/Linux systems and real-time position change notifications via Telegram. Currently, Tracker only supports trading signal acquisition, and real-time sync copy trading with MAKER is still under development.
 
 ---
 
-以下是免费公测账号：
-> 账号：test01  
-> 密码：123
+Here is a free public test account:
+> Username: test01  
+> Password: 123
 
-私人账号开通请点击这：http://www.funsound.cn:5010/ ; github点赞进群获取权限
+To open a private account, click here: [http://www.funsound.cn:5010/](http://www.funsound.cn:5010/) ; Like our GitHub page and join the group to get access.
 
+Download link: [https://github.com/lazyer-trading/BN_Tracker/releases](https://github.com/lazyer-trading/BN_Tracker/releases)
 
-下载地址：https://github.com/lazyer-trading/BN_Tracker/releases
+# User Guide
+## GUI Interaction
+> The login interface is as follows:
+![Login Interface](image.png)
 
+> After filling in the details, click on Track to generate a sub-window for monitoring. You can track multiple traders.
+![Tracking Multiple Traders](image-1.png)
 
-#  使用教程
-## 界面交互
-> 登陆界面如下
-![alt text](image.png)
-
->填线完毕后，点击追踪会生成一个子窗口进行监视，支持追踪多位交易员
-![alt text](image-1.png)
-
-## 命令行交互
-这个适合长期后台检测，比较稳定
+## Command Line Interaction
+This method is suitable for long-term background monitoring and is relatively stable.
+> ```bash
 > ./main.exe user.yaml
+> ```
 
-> 其中user.yaml文件包含交易员主页和telegram api
-![alt text](image-8.png)
+> The `user.yaml` file contains the trader's homepage and Telegram API details.
+![user.yaml Example](image-8.png)
 
-> 跑起来后你的telegram频道会收到仓位变动信息
-![alt text](image-3.png)
+> After running, your Telegram channel will receive position change information.
+![Telegram Notifications](image-3.png)
 
-# Telegram 通知
-![alt text](image-4.png)
+# Telegram Notifications
+![Telegram](image-4.png)
 
-
-## Telegram api
-> token: 通过新建机器人获取
+## Telegram API
+> Token: Obtained by creating a new bot.
 > 
-![alt text](image-5.png)
+![Create Bot](image-5.png)
 
->chat id:登陆网页版选中个人频道，在网址里 -开头
+> Chat ID: Login to the web version, select your personal channel, and find the ID in the URL starting with `-`.
 > 
-![alt text](image-6.png)
+![Chat ID](image-6.png)
 
-# 联系我们
-#### telegram: [@lazyer_trading](https://t.me/bn_ct_track)
-#### email: lazyer.trading@gmail.com
+# Contact Us
+#### Telegram: [@lazyer_trading](https://t.me/bn_ct_track)
+#### Email: [lazyer.trading@gmail.com](mailto:lazyer.trading@gmail.com)
+
