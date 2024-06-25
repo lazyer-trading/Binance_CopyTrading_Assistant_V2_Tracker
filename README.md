@@ -43,9 +43,6 @@ tg_token: ''
 tg_chat_id: ''
 ```
 
-> The `user.yaml` file contains the trader's homepage and Telegram API details.
-![user.yaml Example](image-8.png)
-
 > After running, your Telegram channel will receive position change information.
 ![Telegram Notifications](image-3.png)
 
