@@ -27,6 +27,22 @@ This method is suitable for long-term background monitoring and is relatively st
 > ./main.exe user.yaml
 > ```
 
+yaml 格式
+```python
+account:
+  username: "test01"
+  password: "123" 
+
+urls:
+  - https://www.binance.com/zh-CN/copy-trading/lead-details/3994879592543698688?timeRange=30D
+  - https://www.binance.com/zh-CN/copy-trading/lead-details/3797540493213995264?timeRange=7D
+  - https://www.binance.com/zh-CN/copy-trading/lead-details/3918587622748356097?timeRange=7D
+  - https://www.binance.com/zh-CN/copy-trading/lead-details/3746705301936883968?timeRange=7D
+
+tg_token: ''
+tg_chat_id: ''
+```
+
 > The `user.yaml` file contains the trader's homepage and Telegram API details.
 ![user.yaml Example](image-8.png)
 
