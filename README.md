@@ -16,9 +16,11 @@ Download link: [https://github.com/lazyer-trading/BN_Tracker/releases](https://g
 # User Guide
 ## GUI Interaction
 > The login interface is as follows:
+
 ![Login Interface](image.png)
 
 > After filling in the details, click on Track to generate a sub-window for monitoring. You can track multiple traders.
+
 ![Tracking Multiple Traders](image-1.png)
 
 ## Command Line Interaction
