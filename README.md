@@ -1,43 +1,52 @@
 
-# Tracker - Binance Public Copy Trading Signal Tracker
+# 币安跟单助手（Tracker）
 
-Tracker software will track the historical trades of Binance public copy trading in real-time and organize position signals. It supports both **GUI/Command Line** operation on Windows/Linux systems and real-time position change notifications via Telegram. Currently, Tracker only supports trading signal acquisition, and real-time sync copy trading with MAKER is still under development.
+币安跟单助手Tracker模块 提供追踪公域带单信号，追踪交易记录，生成实时仓位表单，通过Telegram实时通知。目前支持：
+ - windows / linux 两种版本，支持后台长期监控
+ - windows 提供命令行/图形交互，linux仅限命令行，支持同时追踪多位交易员线程。
+ - 不开源但是免费，欢迎加入电报群交流
+
+<p align="left">
+    <img src="img/bn.png" alt="Tracker Logo" width="200" height="200"> &nbsp 
+    <img src="img/tracker.png" alt="Tracker Logo" width="200" height="200"> &nbsp
+    <img src="img/demo.png" alt="Tracker Logo" width="400" height="200">
+</p>
+
 
 ---
+### 软件下载
+下载链接: [https://github.com/lazyer-trading/BN_Tracker/releases](https://github.com/lazyer-trading/BN_Tracker/releases)
 
-Here is a free public test account:
-> Username: test01  
-> Password: 123
+> ubuntu 首次使用chrome遇到异常请尝试： </br>
+> wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb </br>
+> sudo apt install ./google-chrome-stable_current_amd64.deb </br>
+> sudo apt-get -f install </br>
 
-To open a private account, click here: [https://www.funsound.cn/tracker] ; Like our GitHub page and join the group to get access.
+账号注册链接：https://www.funsound.cn/tracker
 
-Download link: [https://github.com/lazyer-trading/BN_Tracker/releases](https://github.com/lazyer-trading/BN_Tracker/releases)
 
-> ubuntu 首次使用chrome遇到异常请尝试：
-> 
-> wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-> 
-> sudo apt install ./google-chrome-stable_current_amd64.deb
-> 
-> sudo apt-get -f install
-> 
-# User Guide
-## GUI Interaction
-> The login interface is as follows:
+## 使用教程
 
-![Login Interface](image.png)
+### 图形交互
+> 1.登陆账号 </br>
+> 2.输入交易员主页url 例如：https://www.binance.com/zh-CN/copy-trading/lead-details/3994879592543698688?timeRange=30D </br>
+> 3. 如果希望telegram通知，输入telegram的api
+<p align="center">
+<img src="img/gui.png" alt="Tracker Logo" width="300" height="300">
+</br>
+点击追踪后，跳出一个子窗口用于检测目标交易员交易信号，可生成多个窗口
+</br>
+<img src="img/gui2.png" alt="Tracker Logo" width="700" height="300">
+</p>
 
-> After filling in the details, click on Track to generate a sub-window for monitoring. You can track multiple traders.
 
-![Tracking Multiple Traders](image-1.png)
-
-## Command Line Interaction
-This method is suitable for long-term background monitoring and is relatively stable.
+## 命令行交互
+命令行交互适合后台长期运行，例如nohup命令，使用如下，传入配置即可
 > ```bash
 > ./main.exe user.yaml
 > ```
 
-yaml 格式
+其中 yaml 格式 如下
 ```python
 account:
   username: "test01"
@@ -52,23 +61,28 @@ urls:
 tg_token: ''
 tg_chat_id: ''
 ```
-
+运行时界面：
 > After running, your Telegram channel will receive position change information.
-![Telegram Notifications](image-3.png)
+<p align="center">
+<img src="img/headless.png" alt="Tracker Logo" width="700" height="300">
+</p>
 
-# Telegram Notifications
-![Telegram](image-4.png)
 
-## Telegram API
-> Token: Obtained by creating a new bot.
+
+## 获取 Telegram API
+> Token: 新建一个机器人即可获取
+<p align="center">
+<img src="img/tg1.png" alt="Tracker Logo" width="400" height="300">
+</p>
+
+> Chat ID: 新建机器人后，创建一个频道，将机器人设置为管理员就可以就收消息了，频道id通过网页端可以获取，“-”开头后数字.
 > 
-![Create Bot](image-5.png)
+<p align="center">
+<img src="img/tg2.png" alt="Tracker Logo" width="700" height="300">
+</p>
 
-> Chat ID: Login to the web version, select your personal channel, and find the ID in the URL starting with `-`.
-> 
-![Chat ID](image-6.png)
 
-# Contact Us
+# 联系我们
 #### Telegram: [@lazyer_trading](https://t.me/bn_ct_track)
 #### Email: [lazyer.trading@gmail.com](mailto:lazyer.trading@gmail.com)
 
