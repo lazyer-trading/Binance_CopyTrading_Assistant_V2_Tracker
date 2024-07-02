@@ -14,8 +14,11 @@ To open a private account, click here: [http://www.funsound.cn:5010/](http://www
 Download link: [https://github.com/lazyer-trading/BN_Tracker/releases](https://github.com/lazyer-trading/BN_Tracker/releases)
 
 > ubuntu 首次使用chrome遇到异常请尝试：
+> 
 > wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+> 
 > sudo apt install ./google-chrome-stable_current_amd64.deb
+> 
 > sudo apt-get -f install
 > 
 # User Guide
