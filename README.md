@@ -9,7 +9,7 @@ Here is a free public test account:
 > Username: test01  
 > Password: 123
 
-To open a private account, click here: [http://www.funsound.cn:5010/](http://www.funsound.cn:5010/) ; Like our GitHub page and join the group to get access.
+To open a private account, click here: [https://www.funsound.cn/tracker] ; Like our GitHub page and join the group to get access.
 
 Download link: [https://github.com/lazyer-trading/BN_Tracker/releases](https://github.com/lazyer-trading/BN_Tracker/releases)
 
